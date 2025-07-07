@@ -3,7 +3,11 @@
 This is a responsive, modern real estate listing site built using **Vite**, **Tailwind CSS v3**, and **vanilla JS** — designed as both a professional portfolio piece and a starting template for real-world real estate websites. It demonstrates front-end layout techniques, image galleries, component reuse, and clean project structure using modern frontend tools.
 
 ---
+## 📸 Screenshot
 
+![Screenshot of Real Estate Homepage](public/demo-screenshot.jpg)
+
+---
 ## ✨ Features
 
 - 🔍 **Responsive Search & Listings Page**  
@@ -104,11 +108,7 @@ Cybersecurity + Cloud student | USMC Veteran | Web Dev | System Admin
 
 ---
 
-## 📸 Sample Screenshot
 
-![Screenshot of Real Estate Homepage](public/demo-screenshot.jpg)
-
----
 
 ## 📄 License
 
