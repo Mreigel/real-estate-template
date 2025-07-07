@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | C2CWebSolutions</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="./injectLayout.js" defer></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    
+    <!-- Injected Navbar -->
+    <div id="inject-navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="p-8 bg-gray-800 shadow-md text-center">
+      <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+      <p class="text-lg text-white">We’d love to hear from you.</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="p-8 max-w-xl mx-auto">
+      <form class="space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aquamarine" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aquamarine" />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aquamarine"></textarea>
+        <button type="submit" class="w-full bg-aquamarine text-gray-900 font-bold py-2 rounded-md hover:bg-opacity-90 transition">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Injected Footer -->
+    <div id="inject-footer"></div>
+
+  </body>
+</html>
