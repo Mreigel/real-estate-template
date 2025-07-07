@@ -20,8 +20,8 @@ app.innerHTML = `
     </nav>
 
     <!-- Hero -->
-    <section class="p-8 bg-gray-800 shadow-md text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">
+    <section class="px-4 py-6 sm:px-6 sm:py-8 bg-gray-800 shadow-md text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">
         C2CWebSolutions
       </h1>
       <p class="text-white text-lg md:text-xl mb-6">
@@ -38,7 +38,7 @@ app.innerHTML = `
     </section>
 
     <!-- Property Listings -->
-    <section id="propertyGrid" class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="propertyGrid" class="px-4 py-6 sm:px-6 sm:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       ${renderProperties(properties)}
     </section>
 
@@ -73,17 +73,17 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
 function renderProperties(list) {
   return list.map((prop) => `
     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
-      <img src="${prop.images[0]}" alt="Property Image" class="w-full h-48 object-cover cursor-pointer"
-           onclick="location.href='listing.html?id=${prop.id}'">
+      <img src="${prop.images[0]}" alt="Property Image" class="w-full h-40 sm:h-48 object-cover cursor-pointer"
+          onclick="location.href='listing.html?id=${prop.id}'">
       <div class="p-4">
         <h2 class="text-xl font-semibold text-aquamarine">${prop.price}</h2>
         <p class="text-gray-300 mb-2">${prop.address}</p>
         <p class="text-sm text-gray-400 mb-2">${prop.description}</p>
         <p class="text-sm text-gray-400">Seller: ${prop.seller}</p>
-        <button class="mt-3 w-full bg-aquamarine text-gray-900 font-bold py-2 rounded-md hover:bg-opacity-90 transition"
-                onclick="location.href='listing.html?id=${prop.id}'">
-          View Details
-        </button>
+        <button class="mt-3 w-full bg-aquamarine text-gray-900 font-bold py-2 text-sm sm:text-base rounded-md hover:bg-opacity-90 transition"
+        onclick="location.href='listing.html?id=${prop.id}'">
+  View Details
+</button>
       </div>
     </div>
   `).join('');
